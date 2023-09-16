@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <div class="left-section">
+        <!-- Profile picture and name -->
+        <img src="MyFrontend\src\assets\profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+        <span class="profile-name">Brian Kawinzi</span>
+    </div>
+
+    <!-- Hamburger Menu Icon (for mobile view) -->
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-button">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <!-- Mobile Menu Content -->
+    <mat-menu #menu="matMenu" class="mobile-menu">
+        <button mat-menu-item><a href="">Home</a></button>
+        <button mat-menu-item><a href="">About</a></button>
+        <button mat-menu-item><a href="">Projects</a></button>
+        <button mat-menu-item><a href="">Contacts</a></button>
+    </mat-menu>
+
+    <div class="right-section">
+        <!-- Navigation links (for desktop view) -->
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </div>
+</nav>
