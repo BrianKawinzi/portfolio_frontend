@@ -8,13 +8,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntroComponent } from './pages/intro/intro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-   
+
     LandingPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
